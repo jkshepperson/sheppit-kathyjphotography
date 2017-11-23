@@ -1938,6 +1938,11 @@
 
 /* Image */
 
+	.image-grid {
+		height: 250px;
+		width: 100%;
+	}
+
 	.image {
 		border-radius: 3px;
 		border: 0;
