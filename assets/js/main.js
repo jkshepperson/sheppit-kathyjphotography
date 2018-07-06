@@ -93,6 +93,11 @@
 					leave:		function() { $header.removeClass('alt'); }
 				});
 
+		// Shop.
+			$("#shop").hover(function(){
+    			$(this).css("background-color", "black", "opacity", ".5",);
+			});
+
 			}
 
 	});
