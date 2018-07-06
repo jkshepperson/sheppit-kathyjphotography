@@ -21,7 +21,8 @@
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
-			$header = $('#header');
+			$header = $('#header'),
+			$shop = $('#shop');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -89,16 +90,11 @@
 				$banner.scrollex({
 					bottom:		$header.outerHeight() + 1,
 					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
+					enter:		function() {  $shop.addClass('alt'); $header.addClass('alt'); },
+					leave:		function() {  $shop.removeClass('alt'); $header.removeClass('alt'); },
 				});
-
-		// Shop.
-			$("#shop").hover(function(){
-    			$(this).css("background-color", "black", "opacity", ".5",);
-			});
-
 			}
+
 
 	});
 
